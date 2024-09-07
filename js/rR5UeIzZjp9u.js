@@ -1,0 +1,1 @@
+window.themeSwitchToggle=function(){var a=$(".theme-switch input");a.prop("checked",localStorage.theme===window.forge.THEME_DARK);a.change(function(){localStorage.theme=$(this).is(":checked")?window.forge.THEME_DARK:window.forge.THEME_LIGHT;window.forge.swapThemeCSS(localStorage.theme)})};
